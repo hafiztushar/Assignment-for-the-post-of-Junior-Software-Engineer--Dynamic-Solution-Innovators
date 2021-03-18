@@ -38,3 +38,13 @@ body {
 input {
   height: 30px;
 }
+.success {
+  height: 800px;
+  text-align: center;
+  padding-top: 200px;
+}
+.failure {
+  height: 800px;
+  text-align: center;
+  padding-top: 200px;
+}

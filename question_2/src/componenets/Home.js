@@ -1,11 +1,10 @@
 import React, {useState} from 'react'
-
 function Home() {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
-    const [status, setStatus] = useState("");
+    const [status, setStatus] = useState("no"); //change the value here as we dont have a server api to call
 
     const submitForm = (e) => {
         if (email === "" || password === "") {
@@ -16,13 +15,17 @@ function Home() {
 
         //an api call with email and password to authenticate the user is required. https://jsonkeeper.com/b/XGMW  this will return user available or yes
         else {
+                        e.preventDefault();
+
             fetch('https://jsonkeeper.com/b/XGMW')
                 .then(({ result }) => setStatus(result));
-            if (result === "yes") {
-                
+            
+            if (status === "yes") {
+                console.log("got");
+                window.location.assign('/Success');
             }
             else {
-                
+                window.location.assign('/Failure');
             }
         }
 
