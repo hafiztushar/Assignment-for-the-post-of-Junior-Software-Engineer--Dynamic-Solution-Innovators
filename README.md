@@ -1,0 +1,1 @@
+# Assignment-for-the-post-of-Junior-Software-Engineer--Dynamic-Solution-Innovators
