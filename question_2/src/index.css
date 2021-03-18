@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0px;
+  min-height: 100%;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  height: 800px;
+}
+.box {
+  height: 300px;
+  width: 300px;
+  background-color: rgb(135, 197, 93);
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 10%;
+}
+.input-box {
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: auto;
+}
+.full-w {
+  width: 100%;
+}
+input {
+  height: 30px;
+}
