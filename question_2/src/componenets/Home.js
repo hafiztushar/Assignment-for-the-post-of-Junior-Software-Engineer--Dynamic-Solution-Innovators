@@ -12,13 +12,18 @@ function Home() {
             setError("all fields erquired");
             e.preventDefault();
         }
-        //an api call with email and password to authenticate the user is required Your JSON is hosted at: https://jsonkeeper.com/b/66SS
+        //an api call with email and password to authenticate the user is required. https://jsonkeeper.com/b/66SS  this will return user not available or no
 
-        //yes Your JSON is hosted at: https://jsonkeeper.com/b/XGMW
+        //an api call with email and password to authenticate the user is required. https://jsonkeeper.com/b/XGMW  this will return user available or yes
         else {
             fetch('https://jsonkeeper.com/b/XGMW')
                 .then(({ result }) => setStatus(result));
-            e.preventDefault();
+            if (result === "yes") {
+                
+            }
+            else {
+                
+            }
         }
 
     }
